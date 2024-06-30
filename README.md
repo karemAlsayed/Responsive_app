@@ -1,6 +1,7 @@
 # responsive_dashboard
 
 A new Flutter project.
+It is just a simple responsive app working on every platform
 
 ## Getting Started
 
