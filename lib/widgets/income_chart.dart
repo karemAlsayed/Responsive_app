@@ -14,8 +14,11 @@ class _IncomChartState extends State<IncomChart> {
   int activeIndex = -1;
   @override
   Widget build(BuildContext context) {
-    return PieChart(
-      getChartData(),
+    return AspectRatio(
+      aspectRatio: 1,
+      child: PieChart(
+        getChartData(),
+      ),
     );
   }
 
@@ -33,25 +36,25 @@ class _IncomChartState extends State<IncomChart> {
         sectionsSpace: 0,
         sections: [
           PieChartSectionData(
-            radius: activeIndex == 0? 70 :50,
+            radius: activeIndex == 0? 45 :40,
             showTitle: false,
             value: 40,
             color: const Color(0xff208bc7),
           ),
           PieChartSectionData(
             showTitle: false,
-            value: 35,
-            radius: activeIndex == 1? 70 :50,
+            value: 25,
+            radius: activeIndex == 1? 45 :40,
             color: const Color(0xff4db7f2),
           ),
           PieChartSectionData(
-            radius: activeIndex == 2? 70 :50,
+            radius: activeIndex == 2? 45 :40,
             showTitle: false,
-            value: 20,
+            value: 10,
             color: const Color(0xff064060),
           ),
           PieChartSectionData(
-            radius: activeIndex == 3? 70 :50,
+            radius: activeIndex == 3? 45 :40,
             showTitle: false,
             value: 25,
             color: const Color(0xffe2decd),
