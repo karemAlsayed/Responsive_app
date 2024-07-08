@@ -9,14 +9,14 @@ class AllExpensessHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return   Row(
       children: [
         Text(
           'All Expensess',
-          style: AppStyles.styleSemiBold20,
+          style: AppStyles.styleSemiBold20(context),
         ),
-        Expanded(child: SizedBox(),),
-        RangeOptions(),
+        const Expanded(child: SizedBox(),),
+        const RangeOptions(),
       ],
     );
   }

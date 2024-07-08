@@ -18,9 +18,9 @@ class RangeOptions extends StatelessWidget {
         padding: const EdgeInsets.all(12),
         child: Row(
           children: [
-            const Text(
+             Text(
               'Monthly',
-              style: AppStyles.styleMedium16,
+              style: AppStyles.styleMedium16(context),
                   
             ),
             const SizedBox(width: 18,),

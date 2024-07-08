@@ -16,7 +16,7 @@ class IncomeSectionHeader extends StatelessWidget {
       children: [
         Text(
           'Income',
-          style: AppStyles.styleSemiBold20
+          style: AppStyles.styleSemiBold20(context)
               .copyWith(color: const Color(0xff064060)),
         ),
         Container(
@@ -38,7 +38,7 @@ class IncomeSectionHeader extends StatelessWidget {
             children: [
               Text(
                 'Monthly',
-                style: AppStyles.styleMedium16.copyWith(
+                style: AppStyles.styleMedium16(context).copyWith(
                   color: const Color(0xff064060),
                 ),
                 
